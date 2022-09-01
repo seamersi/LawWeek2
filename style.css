@@ -47,16 +47,66 @@ html {
     grid-row: span 3;
 }
 
+.images {
+    padding: 7px;
+}
+
+.image1 {
+    height: 500px;
+    width: 600px;
+}
+.image2 {
+    height: 500px;
+    width: 600px;
+}
+
 @media only screen and (max-width: 950px) {
     .grid {
-        grid-template-columns: auto;
-        grid-template-rows:repeat(7, 40vh);
+        grid-template-columns: repeat (2, 40vh);
+        grid-template-rows:repeat(7, auto);
+    }
+    .image1 {
+        width: 700px;
+        height: 300px;
+    }
+    .image2 {
+        width: 200px;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 550px) {
     .grid {
-        grid-template-columns: auto;
-        grid-template-rows:repeat(7, 40vh);
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows:repeat(9, auto);
     }
+    .item1 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .item2 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .item7 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .item6 {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .image1 {
+        width: 500px;
+        height: 300px;
+    }
+    .image2 {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+.stutter {
+    padding: 15px;
+    text-align: center;
 }
